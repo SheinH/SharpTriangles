@@ -2,10 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using SharpTriangles.Models;
 
 namespace SharpTriangles.Controllers
 {
+    [EnableCors(origins: "www.sheinhtike.com", headers: "*", methods: "*")]
     public class TrianglesController : ApiController
     {
         // GET api/triangles/5
