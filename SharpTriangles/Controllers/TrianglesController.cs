@@ -7,10 +7,10 @@ using SharpTriangles.Models;
 
 namespace SharpTriangles.Controllers
 {
-    [EnableCors(origins: "www.sheinhtike.com", headers: "*", methods: "*")]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class TrianglesController : ApiController
     {
-        // GET api/triangles/5
+        // GET api/triangles/ID
         public Point[] Get(string id)
         {
             char letter = id[0];
